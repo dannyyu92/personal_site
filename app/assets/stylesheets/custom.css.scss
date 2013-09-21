@@ -1,0 +1,23 @@
+@import "bootstrap";
+
+/* Universal */
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	padding-top: 60px;
+}
+
+
+/* Header */
+
+
+
+.navbar-inner {
+  background: none;
+  outline: none;
+  border: none;
+  @include box-shadow(none !important);
+}
