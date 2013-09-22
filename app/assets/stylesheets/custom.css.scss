@@ -7,15 +7,30 @@ html {
 }
 
 body {
-	padding-top: 60px;
+	padding-top: 80px;
 }
 
 
 /* Header */
 
 .navbar-inner {
+	padding-top: 20px;
   background: none;
   outline: none;
   border: none;
   @include box-shadow(none !important);
 }
+
+#logo {
+	float: left;
+	padding-left: 10px;
+	padding-top: 10px;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #000;
+	letter-spacing:-1px;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
