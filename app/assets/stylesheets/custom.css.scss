@@ -33,6 +33,29 @@ body {
 	}
 }
 
+/* Footer */
+footer {
+	border-top: 1px solid #eaeaea;
+	margin-top:10px;
+	ul {
+		list-style: none;
+		float: right;
+		li {
+			float: left;
+			margin-left: 10px;
+			a {
+				color: #5d5d5d;
+				&:hover {
+					color: #000;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	
+
+}
+
 /* Hero Unit */
 .hero-unit {
 	background-image: image-url("nycpic.png");
