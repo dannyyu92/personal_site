@@ -1,7 +1,15 @@
 # config/initializers/carrierwave.rb
  
 CarrierWave.configure do |config|
-	config.fog_credentials = {
+
+
+	 # For testing, upload files to local `tmp` folder.
+	if Rails.env.development? || Rails.env.test?
+		config.storage = :file 
+	else
+		config.storage = :fog
+	  config.fog_directory  = ENV['S3_BUCKET_NAME']
+		config.fog_credentials = {
 # Configuration for Amazon S3 should be made available through an Environment variable.
 # For local installations, export the env variable through the shell OR
 # if using Passenger, set an Apache environment variable.
@@ -15,8 +23,9 @@ CarrierWave.configure do |config|
 		:aws_access_key_id => ENV['S3_KEY'],
 		:aws_secret_access_key => ENV['S3_SECRET'],
 	}
+	end
+ 
 
 
-	config.fog_directory  = ENV['S3_BUCKET_NAME']
 
 end
