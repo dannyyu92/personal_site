@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.12'
+gem 'pg' , '0.17.0'
 gem 'bootstrap-sass'
 gem 'bcrypt-ruby', '3.0.1'
 gem 'devise'
@@ -17,7 +18,7 @@ group :development do
 end
 
 group :production do
-  gem 'pg', '~> 0.17.0'
+  gem 'pg', '0.17.0'
 end
 
 # Gems used only for assets and not required
