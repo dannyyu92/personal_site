@@ -1,24 +1,24 @@
-<h1>Listing portfolio_items</h1>
+<div class="row-fluid">
+	<% @portfolio_items.each do |portfolio_item| %>
+	<hr class='featurette-divider'>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Description</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+    <div class="span5">
+      <%= image_tag portfolio_item.portfolio_image_url(:thumb).to_s %>
+    </div>
+    <div class="span6">
+	    <h1><%= portfolio_item.title %></h1>
+	    <p class="lead"><%= portfolio_item.description %></p>
+	    <%= link_to 'Show', portfolio_item %>
+			<%= link_to 'Edit', edit_portfolio_item_path(portfolio_item) %>
+			<%= link_to 'Destroy', portfolio_item, method: :delete, data: { confirm: 'Are you sure?' } %>
+	  </div>
+</div>
 
-<% @portfolio_items.each do |portfolio_item| %>
-  <tr>
-    <td><%= portfolio_item.title %></td>
-    <td><%= portfolio_item.description %></td>
-    <td><%= link_to 'Show', portfolio_item %></td>
-    <td><%= link_to 'Edit', edit_portfolio_item_path(portfolio_item) %></td>
-    <td><%= link_to 'Destroy', portfolio_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+
+
+
+
 <% end %>
-</table>
 
 <br />
 
