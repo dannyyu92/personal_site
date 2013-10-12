@@ -1,4 +1,5 @@
 PersonalSite::Application.routes.draw do
+  resources :articles
   resources :portfolio_items
 
   root to: "static_pages#home"
