@@ -3,10 +3,12 @@
 /* Universal */
 html {
 	overflow-y: scroll;
+
 }
 
 body {
 	padding-top: 20px;
+
 }
 
 /* Typography */
@@ -14,6 +16,10 @@ h1 {
 	#title {
 			text-align: center;
 		}
+}
+
+p {
+	font-size: 1.2em;
 }
 
 /* Header */
@@ -82,7 +88,6 @@ footer {
 .article {
 	text-align: center;
 	p {
-		font-size: 1.2em;
 		line-height: 170%;
 		text-align: left;	
 	}
