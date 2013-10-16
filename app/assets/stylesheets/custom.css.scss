@@ -1,7 +1,6 @@
 @import "bootstrap";
 
 /* Universal */
-
 html {
 	overflow-y: scroll;
 }
@@ -10,8 +9,14 @@ body {
 	padding-top: 20px;
 }
 
-/* Header */
+/* Typography */
+h1 {
+	#title {
+			text-align: center;
+		}
+}
 
+/* Header */
 .navbar-inner {
   background: none;
   outline: none;
@@ -73,5 +78,13 @@ footer {
 	}
 }
 
-
+/* Articles */
+.article {
+	text-align: center;
+	p {
+		font-size: 1.2em;
+		line-height: 170%;
+		text-align: left;	
+	}
+}
 

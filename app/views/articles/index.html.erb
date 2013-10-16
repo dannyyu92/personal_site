@@ -1,3 +1,5 @@
+<% provide(:title, "Blog") %>
+
 <hr class='featurette-divider'>
 <h1>Articles</h1>
 
@@ -7,12 +9,11 @@
       <% @articles.each do |article| %>
         <li class="span4">
           <div class="thumbnail">
-            <%= image_tag article.article_image_url(:thumb).to_s %>
+            <%= link_to image_tag(article.article_image_url(:thumb).to_s), article %>
             <h3><%= article.title %></h3>  
             <%= article.published_at.to_formatted_s(:long) %>
             <%= link_to 'Show', article %>
             <%= link_to 'Edit', edit_article_path(article) %>
-            <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
           </div>
         </li>
       <% end %>
