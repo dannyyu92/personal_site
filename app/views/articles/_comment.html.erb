@@ -5,7 +5,9 @@
 
 	<p>
 		<%= comment.body %>
-		<%= link_to 'Delete', [@article, comment], :confirm => 'Are you sure?', :method => :delete %>
+		<% if admin_signed_in? %>
+			<%= link_to 'Delete', [@article, comment], :confirm => 'Are you sure?', :method => :delete %>
+		<% end %>
 	</p>
 
 	<p style="text-align: right">

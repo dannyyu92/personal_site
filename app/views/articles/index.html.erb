@@ -10,13 +10,14 @@
         <li class="span4">
           <div class="thumbnail">
             <%= link_to image_tag(article.article_image_url(:thumb).to_s), article %>
-            <h3><%= article.title %></h3>  
-            <%= article.published_at.to_formatted_s(:long) %>
+            <center>
+              <h3><%= link_to article.title, article %></h3>  
+              <%= article.published_at.to_formatted_s(:articles) %>
 
-            <% if admin_signed_in? %>
-              <%= link_to 'Show', article, class: "btn btn-primary" %>
-              <%= link_to 'Edit', edit_article_path(article), class: "btn btn-primary" %>
-            <% end %>
+              <% if admin_signed_in? %>
+                <%= link_to 'Edit', edit_article_path(article), class: "btn btn-primary" %>
+              <% end %>
+            </center>
 
           </div>
         </li>
