@@ -1,0 +1,9 @@
+<div class="article">
+	<h1>
+	  <%= @article.title %><br />
+	</h1>
+		<%= image_tag @article.article_image_url.to_s, style:"border-radius: 7px;" %><br /><br />
+	<p>
+	  <%= raw @article.body %>
+	</p>
+</div>

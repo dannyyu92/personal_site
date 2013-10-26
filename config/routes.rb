@@ -1,5 +1,8 @@
 PersonalSite::Application.routes.draw do
-  resources :articles
+  resources :articles do
+    resources :comments
+  end
+  
   resources :portfolio_items
 
   root to: "static_pages#home"

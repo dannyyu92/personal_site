@@ -1,0 +1,15 @@
+<div class= "well well-small">
+	<h4>
+		<%= comment.name %>:
+	</h4>
+
+	<p>
+		<%= comment.body %>
+		<%= link_to 'Delete', [@article, comment], :confirm => 'Are you sure?', :method => :delete %>
+	</p>
+
+	<p style="text-align: right">
+		Posted <%= distance_of_time_in_words_to_now(comment.created_at) %> ago
+	</p>
+
+</div>
