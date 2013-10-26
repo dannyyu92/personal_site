@@ -22,7 +22,7 @@
 	<% end %>
 </div>
 
-
 <br />
-
-<%= link_to 'New Portfolio item', new_portfolio_item_path %>
+<% if admin_signed_in? %>
+  <%= link_to 'New Portfolio Item', new_portfolio_item_path, class: "btn btn-primary" %>
+<% end %>

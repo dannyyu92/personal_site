@@ -12,8 +12,12 @@
             <%= link_to image_tag(article.article_image_url(:thumb).to_s), article %>
             <h3><%= article.title %></h3>  
             <%= article.published_at.to_formatted_s(:long) %>
-            <%= link_to 'Show', article %>
-            <%= link_to 'Edit', edit_article_path(article) %>
+
+            <% if admin_signed_in? %>
+              <%= link_to 'Show', article, class: "btn btn-primary" %>
+              <%= link_to 'Edit', edit_article_path(article), class: "btn btn-primary" %>
+            <% end %>
+
           </div>
         </li>
       <% end %>
@@ -21,6 +25,6 @@
   </div>  
 </div>
 
-<br />
-
-<%= link_to 'New Article', new_article_path %>
+<% if admin_signed_in? %>
+  <%= link_to 'New Article', new_article_path, class: "btn btn-primary" %>
+<% end %>

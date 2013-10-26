@@ -1,4 +1,5 @@
 class PortfolioItemsController < ApplicationController
+  before_filter :authenticate_admin!, except: [:index, :show]
   # GET /portfolio_items
   # GET /portfolio_items.json
   def index

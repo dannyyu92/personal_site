@@ -1,4 +1,10 @@
 PersonalSite::Application.routes.draw do
+  devise_for :admins
+
+  devise_scope :admin do
+    get "/signin" => "devise/sessions#new"
+  end
+
   resources :articles do
     resources :comments
   end

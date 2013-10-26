@@ -1,4 +1,5 @@
 class ArticlesController < ApplicationController
+  before_filter :authenticate_admin!, except: [:index, :show]
   # GET /articles
   # GET /articles.json
   def index
