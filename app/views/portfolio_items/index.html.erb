@@ -14,9 +14,12 @@
 	    <%= link_to 'Site Link', portfolio_item.site_link, class:"btn btn-primary" %>
 
 	    <br /><br />
-	    <%= link_to 'Show', portfolio_item %>
-			<%= link_to 'Edit', edit_portfolio_item_path(portfolio_item) %>
-			<%= link_to 'Destroy', portfolio_item, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+	    <% if admin_signed_in? %>
+		    <%= link_to 'Show', portfolio_item %>
+				<%= link_to 'Edit', edit_portfolio_item_path(portfolio_item) %>
+				<%= link_to 'Destroy', portfolio_item, method: :delete, data: { confirm: 'Are you sure?' } %>
+			<% end %>
 	  </div>
 
 	<% end %>
