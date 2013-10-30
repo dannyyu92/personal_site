@@ -1,5 +1,5 @@
 @import "bootstrap";
-@import url(http://fonts.googleapis.com/css?family=Lato:400,300,300italic|Quicksand:400,300|Open+Sans:400,300,300italic|Oxygen:400,300);
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Oxygen:400,700);
 
 /* Universal */
 * {
@@ -12,6 +12,7 @@ html {
 }
 
 body {
+
 }
 
 /* Typography */
@@ -35,45 +36,65 @@ p {
 }
 
 /* Header */
-.navbar-inner {
-	color: #fff;
-  background: none;
-  background-image: none;
-  background-color: #000;
-  outline: none;
-  border: none;
-  @include box-shadow(none !important);
-  margin-bottom:20px;
-  height: 70px;
+.navbar {
+	.navbar-inner {
+	  background: none;
+	  background-image: none;
+	  background-color: #000;
+	  outline: none;
+	  border: none;
+	  @include box-shadow(none !important);
+	  margin-bottom:20px;
+	  height: 90px;
+	  border-top: solid #575757;
 
-  #logo {
-		font-weight: 300;
-  	float: left;
-		padding-left: 10px;
-		padding-top: 20px;
-		font-size: 1.5em;
-		color: #FFF;
-		letter-spacing:-1.2px;
-		&:hover {
-			text-decoration: none;
-		}
-  }
+		/* Gradients for modern browsers */
+	  background-image: -moz-linear-gradient(top, #3f3f3f, #000000);
+	  background-image: -ms-linear-gradient(top, #3f3f3f, #000000);
+	  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3f3f3f), to(#000000));
+	  background-image: -webkit-linear-gradient(top, #3f3f3f, #000000);
+	  background-image: -o-linear-gradient(top, #3f3f3f, #000000);
+	  background-image: linear-gradient(top, #3f3f3f, #000000);
+	  background-repeat: repeat-x;
 
-  ul {
-  	padding-top:10px;
-  	li {
-  		color: #fff;
-  		font-size: 1.2em;
-  	}
+	  /* IE8-9 gradient filter */
+	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3f3f3f', endColorstr='#000000', GradientType=0);
 
-  }
+	  #logo {
+	  	font-family: "Quicksand", sans-serif;
+			font-weight: 400;
+	  	float: left;
+			padding-left: 10px;
+			padding-top: 35px;
+			font-size: 1.5em;
+			color: #FFF;
+			letter-spacing:-1.2px;
+			&:hover {
+				text-decoration: none;
+			}
+	  }
+	  ul {
 
+	  	padding-top:25px;
+	  	li a {
+	  		font-family: "Quicksand", sans-serif;
+				font-weight: 400;
+	  		color: #fff;
+	  		font-size: 1.2em;
+	  		&:hover {
+	  			color: #9a9a9a;
+	  		}
+	  	}
+	  }
+	}
 }
+
 
 /* Footer */
 footer {
 	border-top: 1px solid #eaeaea;
-	margin-top:10px;
+	padding-top:0px;
+	margin-top:0px;
 	ul {
 		list-style: none;
 		float: right;
@@ -89,8 +110,6 @@ footer {
 			}
 		}
 	}
-	
-
 }
 
 /* Hero Unit */
@@ -98,18 +117,23 @@ footer {
 	
 	background-image: image-url("silhouetteme.png");
 	background-repeat: no-repeat;
-	background-size: 90%;
-	height:430px;
+	background-size: 100%;
+	height:500px;
 	background-position: center 100%;
-	
+	margin-bottom: 0px;
 	background-color: #fff;
 	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 	h1 {
+		font-size: 5.0em;
+		font-weight: 400;
 		text-align: center;
 		padding-right: 160px;
 		letter-spacing: 1px;
 	}
 	p {
+		font-family: "Quicksand";
+		font-weight: 300;
+		margin-top: 10px;
 		letter-spacing: 1px;
 		text-align: center;
 	}
