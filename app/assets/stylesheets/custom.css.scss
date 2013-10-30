@@ -1,12 +1,17 @@
 @import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300,300italic|Quicksand:400,300|Open+Sans:400,300,300italic|Oxygen:400,300);
 
 /* Universal */
+* {
+	font-family: "Oxygen", sans-serif;
+	font-weight: 400;
+}
+
 html {
 	overflow-y: scroll;
 }
 
 body {
-	padding-top: 20px;
 }
 
 /* Typography */
@@ -31,24 +36,38 @@ p {
 
 /* Header */
 .navbar-inner {
+	color: #fff;
   background: none;
-  background-color: #fff;
+  background-image: none;
+  background-color: #000;
   outline: none;
   border: none;
   @include box-shadow(none !important);
-}
+  margin-bottom:20px;
+  height: 70px;
 
-#logo {
-	float: left;
-	padding-left: 10px;
-	padding-top: 10px;
-	font-size: 1.5em;
-	font-weight: bold;
-	color: #000;
-	letter-spacing:-1.2px;
-	&:hover {
-		text-decoration: none;
-	}
+  #logo {
+		font-weight: 300;
+  	float: left;
+		padding-left: 10px;
+		padding-top: 20px;
+		font-size: 1.5em;
+		color: #FFF;
+		letter-spacing:-1.2px;
+		&:hover {
+			text-decoration: none;
+		}
+  }
+
+  ul {
+  	padding-top:10px;
+  	li {
+  		color: #fff;
+  		font-size: 1.2em;
+  	}
+
+  }
+
 }
 
 /* Footer */
@@ -76,19 +95,23 @@ footer {
 
 /* Hero Unit */
 .hero-unit {
-	background-image: image-url("nycpic.png");
-	background-height: 100%;
-	height:500px;
-	background-position: center 50%;
+	
+	background-image: image-url("silhouetteme.png");
+	background-repeat: no-repeat;
+	background-size: 90%;
+	height:430px;
+	background-position: center 100%;
+	
+	background-color: #fff;
 	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 	h1 {
-		text-align: right;
+		text-align: center;
 		padding-right: 160px;
 		letter-spacing: 1px;
 	}
 	p {
 		letter-spacing: 1px;
-		text-align: right;
+		text-align: center;
 	}
 }
 

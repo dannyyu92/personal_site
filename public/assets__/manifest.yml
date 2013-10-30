@@ -1,12 +1,12 @@
 ---
+nycpic.png: nycpic-c9ee0d73cf7fa6697f7b64aaed99ac6a.png
+nycpic/index.png: nycpic-c9ee0d73cf7fa6697f7b64aaed99ac6a.png
 rails.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
 rails/index.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
-silhouetteme.png: silhouetteme-a6c61575f0a94405db060000fe12f6fb.png
-silhouetteme/index.png: silhouetteme-a6c61575f0a94405db060000fe12f6fb.png
 application.js: application-50002ef84e3e4f5f92b0f24a0d531d77.js
 application/index.js: application-50002ef84e3e4f5f92b0f24a0d531d77.js
-application.css: application-62477c67d58309e6e59a4f7a3c8a8a65.css
-application/index.css: application-62477c67d58309e6e59a4f7a3c8a8a65.css
+application.css: application-b4144db1b1d03eb8cb0dff828f231f8d.css
+application/index.css: application-b4144db1b1d03eb8cb0dff828f231f8d.css
 jquery.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
 jquery/index.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
 glyphicons-halflings-white.png: glyphicons-halflings-white-6cccd17a7aed91dbc0157d343c68c0d9.png

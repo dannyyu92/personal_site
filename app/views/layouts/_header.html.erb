@@ -1,4 +1,4 @@
-<div class="navbar navbar-static-top">
+<div class="navbar navbar-static-top navbar-inverse">
 	<div class="navbar-inner">
 		<div class="container">
 		<%= link_to "himynameisdanny", root_path, id: "logo" %>
@@ -6,13 +6,13 @@
 					<ul class="nav pull-right">
 						<% if admin_signed_in? %>
 						  <li>
-							  <%= link_to('Logout', destroy_admin_session_path) %>        
+							  <%= link_to('logout', destroy_admin_session_path) %>        
 						  </li>
 						<% end %>
-						<li><%= link_to "About", about_path %></li>
-						<li><%= link_to "Portfolio", portfolio_items_path %></li>
-						<li><%= link_to "Blog", articles_path %></li>
-						<li><%= link_to "Contact", contact_path %></li>
+						<li><%= link_to "about", about_path %></li>
+						<li><%= link_to "portfolio", portfolio_items_path %></li>
+						<li><%= link_to "blog", articles_path %></li>
+						<li><%= link_to "contact", contact_path %></li>
 					</ul>
 			</nav>
 		</div>
