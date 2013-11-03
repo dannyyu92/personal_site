@@ -2,10 +2,10 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.12'
 gem 'pg' , '0.17.0'
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '2.3.2.2'
 gem 'bcrypt-ruby', '3.0.1'
-gem 'devise'
-gem 'carrierwave'
+gem 'devise', '3.1.0'
+gem 'carrierwave', '0.9.0'
 gem 'rmagick', '<= 2.13.2'
 gem 'fog', "~> 1.3.1"
 
@@ -13,7 +13,7 @@ gem 'fog', "~> 1.3.1"
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development do
-  gem 'sextant'
+  gem 'sextant', '0.2.4'
   gem 'sqlite3'
 end
 
@@ -33,7 +33,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '3.0.4'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

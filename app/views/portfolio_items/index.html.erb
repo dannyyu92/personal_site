@@ -1,28 +1,31 @@
 <% provide(:title, "Portfolio") %>
 
 <div class="row-fluid">
-	<% @portfolio_items.each do |portfolio_item| %>
+	<div class="span12">
+		<hr class="featurette-divider">
 
-		<hr class='featurette-divider'>
-    <div class="span6">
-      <%= image_tag portfolio_item.portfolio_image_url(:thumb).to_s %>
-    </div>
-    <div class="span5">
-	    <h1><%= portfolio_item.title %></h1>
-	    <p class="lead"><%= portfolio_item.description %></p>	
-	    <%= link_to 'Github', portfolio_item.github, class:"btn btn-primary" %>
-	    <%= link_to 'Site Link', portfolio_item.site_link, class:"btn btn-primary" %>
+		<% @portfolio_items.each do |portfolio_item| %>
+	    <div class="span6">
+	      <%= image_tag portfolio_item.portfolio_image_url(:thumb).to_s %>
+	    </div>
+	    <div class="span5">
+		    <h1><%= portfolio_item.title %></h1>
+		    <p class="lead"><%= portfolio_item.description %></p>
+		    <% unless portfolio_item.github.empty? %>
+			    <%= link_to 'Github', portfolio_item.github, class:"btn btn-primary" %>
+			  <% end %>
+		    <%= link_to 'Site Link', portfolio_item.site_link, class:"btn btn-primary" %>
 
-	    <br /><br />
+		    <br /><br />
 
-	    <% if admin_signed_in? %>
-		    <%= link_to 'Show', portfolio_item %>
-				<%= link_to 'Edit', edit_portfolio_item_path(portfolio_item) %>
-				<%= link_to 'Destroy', portfolio_item, method: :delete, data: { confirm: 'Are you sure?' } %>
-			<% end %>
-	  </div>
-
-	<% end %>
+		    <% if admin_signed_in? %>
+			    <%= link_to 'Show', portfolio_item %>
+					<%= link_to 'Edit', edit_portfolio_item_path(portfolio_item) %>
+					<%= link_to 'Destroy', portfolio_item, method: :delete, data: { confirm: 'Are you sure?' } %>
+				<% end %>
+		  </div>
+		<% end %>
+	</div>
 </div>
 
 <br />
