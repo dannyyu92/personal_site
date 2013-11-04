@@ -1,29 +1,29 @@
 <% provide(:title, "Portfolio") %>
 
 <% @portfolio_items.each do |portfolio_item| %>
-	<div class="row-fluid">
-		<hr class="featurette-divider">
-		<div class="featurette">
-			<%= image_tag portfolio_item.portfolio_image_url(:thumb).to_s, class: "featurette-image pull-right portfolio-img" %>
+  <div class="row-fluid">
+    <hr class="featurette-divider">
+    <div class="featurette">
+      <%= image_tag portfolio_item.portfolio_image_url(:thumb).to_s, class: "featurette-image pull-right portfolio-img" %>
 
-			<h2 class="featurette-heading text-left">
-				<%= portfolio_item.title %>
-			</h2>
+      <h2 class="featurette-heading text-left">
+        <%= portfolio_item.title %>
+      </h2>
 
-			<p class="lead"><%= portfolio_item.description %></p>
-		    <% unless portfolio_item.github.empty? %>
-			    <%= link_to "Github", portfolio_item.github, class:"btn btn-primary" %>
-			  <% end %>
-		    <%= link_to "Site Link", portfolio_item.site_link, class:"btn btn-primary" %>
+      <p class="lead"><%= portfolio_item.description %></p>
+        <% unless portfolio_item.github.empty? %>
+          <%= link_to "Github", portfolio_item.github, class:"btn btn-primary" %>
+        <% end %>
+        <%= link_to "Site Link", portfolio_item.site_link, class:"btn btn-primary" %>
 
-    	<% if admin_signed_in? %>
-	    	<br /><br />
-		    <%= link_to "Show", portfolio_item %>
-				<%= link_to "Edit", edit_portfolio_item_path(portfolio_item) %>
-				<%= link_to "Destroy", portfolio_item, method: :delete, data: { confirm: "Are you sure?" } %>
-			<% end %>
-		</div>
-	</div>
+      <% if admin_signed_in? %>
+        <br /><br />
+        <%= link_to "Show", portfolio_item %>
+        <%= link_to "Edit", edit_portfolio_item_path(portfolio_item) %>
+        <%= link_to "Destroy", portfolio_item, method: :delete, data: { confirm: "Are you sure?" } %>
+      <% end %>
+    </div>
+  </div>
 <% end %>
 
 

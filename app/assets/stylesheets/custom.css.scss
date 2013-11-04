@@ -42,11 +42,11 @@
 
 /* Universal */
 * {
-	font-family: "proxima_novalight";
+  font-family: "proxima_novalight";
 }
 
 html {
-	overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 body {
@@ -55,136 +55,136 @@ body {
 
 /* Typography */
 h1 {
-	#title {
-		text-align: center;
-	}
+  #title {
+    text-align: center;
+  }
 }
 h2, h3 {
-	a {
-		color: #000;
-		&:hover {
-			color: #000;
-			text-decoration: none;
-		}
-	}
+  a {
+    color: #000;
+    &:hover {
+      color: #000;
+      text-decoration: none;
+    }
+  }
 }
 
 p {
-	font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 /* Header */
 .navbar {
-	.navbar-inner {
-	  background: none;
-	  background-image: none;
-	  background-color: #000;
-	  outline: none;
-	  border: none;
-	  @include box-shadow(none !important);
-	  margin-bottom:20px;
-	  height: 90px;
-	  border-top: solid #575757;
+  .navbar-inner {
+    background: none;
+    background-image: none;
+    background-color: #000;
+    outline: none;
+    border: none;
+    @include box-shadow(none !important);
+    margin-bottom:20px;
+    height: 90px;
+    border-top: solid #575757;
 
-		/* Gradients for modern browsers */
-	  background-image: -moz-linear-gradient(top, #3f3f3f, #000000);
-	  background-image: -ms-linear-gradient(top, #3f3f3f, #000000);
-	  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3f3f3f), to(#000000));
-	  background-image: -webkit-linear-gradient(top, #3f3f3f, #000000);
-	  background-image: -o-linear-gradient(top, #3f3f3f, #000000);
-	  background-image: linear-gradient(top, #3f3f3f, #000000);
-	  background-repeat: repeat-x;
+    /* Gradients for modern browsers */
+    background-image: -moz-linear-gradient(top, #3f3f3f, #000000);
+    background-image: -ms-linear-gradient(top, #3f3f3f, #000000);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3f3f3f), to(#000000));
+    background-image: -webkit-linear-gradient(top, #3f3f3f, #000000);
+    background-image: -o-linear-gradient(top, #3f3f3f, #000000);
+    background-image: linear-gradient(top, #3f3f3f, #000000);
+    background-repeat: repeat-x;
 
-	  /* IE8-9 gradient filter */
-	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f3f3f", endColorstr="#000000", GradientType=0);
+    /* IE8-9 gradient filter */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f3f3f", endColorstr="#000000", GradientType=0);
 
-	  #logo {
-	  	font-family: "proxima_nova_rgregular";
-	  	float: left;
-			padding-left: 10px;
-			padding-top: 35px;
-			font-size: 1.5em;
-			color: #FFF;
-			letter-spacing:-1.2px;
-			&:hover {
-				text-decoration: none;
-			}
-	  }
-	  ul {
+    #logo {
+      font-family: "proxima_nova_rgregular";
+      float: left;
+      padding-left: 10px;
+      padding-top: 35px;
+      font-size: 1.5em;
+      color: #FFF;
+      letter-spacing:-1.2px;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    ul {
 
-	  	padding-top:23px;
-	  	li a {
-	  		font-family: "proxima_novalight";
-	  		color: #fff;
-	  		font-size: 1.25em;
-	  		&:hover {
-	  			color: #9a9a9a;
-	  		}
-	  	}
-	  }
-	}
+      padding-top:23px;
+      li a {
+        font-family: "proxima_novalight";
+        color: #fff;
+        font-size: 1.25em;
+        &:hover {
+          color: #9a9a9a;
+        }
+      }
+    }
+  }
 }
 
 
 /* Footer */
 footer {
-	border-top: 1px solid #eaeaea;
-	padding-top:0px;
-	margin-top:0px;
-	ul {
-		list-style: none;
-		float: right;
-		li {
-			float: left;
-			margin-left: 10px;
-			a {
-				color: #5d5d5d;
-				&:hover {
-					color: #000;
-					text-decoration: none;
-				}
-			}
-		}
-	}
+  border-top: 1px solid #eaeaea;
+  padding-top:0px;
+  margin-top:0px;
+  ul {
+    list-style: none;
+    float: right;
+    li {
+      float: left;
+      margin-left: 10px;
+      a {
+        color: #5d5d5d;
+        &:hover {
+          color: #000;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }
 
 /* Hero Unit */
 .hero-unit {
-	
-	background-image: image-url("silhouetteme.png");
-	background-repeat: no-repeat;
-	background-size: 100%;
-	height:500px;
-	background-position: center 100%;
-	margin-bottom: 0px;
-	background-color: #fff;
-	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-	h1 {
-		font-family: "proxima_nova_rgregular";
-		font-size: 5.0em;
-		text-align: center;
-		padding-right: 160px;
-		letter-spacing: 1px;
-	}
-	p {
-		font-family: "proxima_novalight";
-		letter-spacing: 1px;
-		text-align: center;
-	}
+  
+  background-image: image-url("silhouetteme.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height:500px;
+  background-position: center 100%;
+  margin-bottom: 0px;
+  background-color: #fff;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  h1 {
+    font-family: "proxima_nova_rgregular";
+    font-size: 5.0em;
+    text-align: center;
+    padding-right: 160px;
+    letter-spacing: 1px;
+  }
+  p {
+    font-family: "proxima_novalight";
+    letter-spacing: 1px;
+    text-align: center;
+  }
 }
 
 /* Articles */
 .article {
-	text-align: center;
-	p {
-		line-height: 170%;
-		text-align: left;	
-	}
+  text-align: center;
+  p {
+    line-height: 170%;
+    text-align: left;  
+  }
 }
 
 /* Portfolio */
 .portfolio-img {
-	margin-left:20px;
-	height:300px;
+  margin-left:20px;
+  height:300px;
 }
 

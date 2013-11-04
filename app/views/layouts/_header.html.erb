@@ -1,20 +1,20 @@
 <div class="navbar navbar-static-top navbar-inverse">
-	<div class="navbar-inner">
-		<div class="container">
-		<%= link_to "himynameisdanny", root_path, id: "logo" %>
-			<nav>
-					<ul class="nav pull-right">
-						<% if admin_signed_in? %>
-						  <li>
-							  <%= link_to("logout", destroy_admin_session_path) %>        
-						  </li>
-						<% end %>
-						<li><%= link_to "about", about_path %></li>
-						<li><%= link_to "portfolio", portfolio_items_path %></li>
-						<li><%= link_to "blog", articles_path %></li>
-						<li><%= link_to "contact", contact_path %></li>
-					</ul>
-			</nav>
-		</div>
-	</div>
+  <div class="navbar-inner">
+    <div class="container">
+    <%= link_to "himynameisdanny", root_path, id: "logo" %>
+      <nav>
+          <ul class="nav pull-right">
+            <% if admin_signed_in? %>
+              <li>
+                <%= link_to("logout", destroy_admin_session_path) %>        
+              </li>
+            <% end %>
+            <li><%= link_to "about", about_path %></li>
+            <li><%= link_to "portfolio", portfolio_items_path %></li>
+            <li><%= link_to "blog", articles_path %></li>
+            <li><%= link_to "contact", contact_path %></li>
+          </ul>
+      </nav>
+    </div>
+  </div>
 </div>
