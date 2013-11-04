@@ -6,7 +6,7 @@
 	<p>
 		<%= comment.body %>
 		<% if admin_signed_in? %>
-			<%= link_to 'Delete', [@article, comment], :confirm => 'Are you sure?', :method => :delete %>
+			<%= link_to "Delete", [@article, comment], :confirm => "Are you sure?", :method => :delete %>
 		<% end %>
 	</p>
 

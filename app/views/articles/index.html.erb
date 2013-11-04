@@ -1,6 +1,6 @@
 <% provide(:title, "Blog") %>
 
-<hr class='featurette-divider'>
+<hr class="featurette-divider">
 <h1>articles</h1>
 
 <div class="row">
@@ -15,7 +15,7 @@
               <%= article.published_at.to_formatted_s(:articles) %>
 
               <% if admin_signed_in? %>
-                <%= link_to 'Edit', edit_article_path(article), class: "btn btn-primary" %>
+                <%= link_to "Edit", edit_article_path(article), class: "btn btn-primary" %>
               <% end %>
             </center>
 
@@ -27,5 +27,5 @@
 </div>
 
 <% if admin_signed_in? %>
-  <%= link_to 'New Article', new_article_path, class: "btn btn-primary" %>
+  <%= link_to "New Article", new_article_path, class: "btn btn-primary" %>
 <% end %>

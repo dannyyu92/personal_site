@@ -12,15 +12,15 @@
 
 			<p class="lead"><%= portfolio_item.description %></p>
 		    <% unless portfolio_item.github.empty? %>
-			    <%= link_to 'Github', portfolio_item.github, class:"btn btn-primary" %>
+			    <%= link_to "Github", portfolio_item.github, class:"btn btn-primary" %>
 			  <% end %>
-		    <%= link_to 'Site Link', portfolio_item.site_link, class:"btn btn-primary" %>
+		    <%= link_to "Site Link", portfolio_item.site_link, class:"btn btn-primary" %>
 
     	<% if admin_signed_in? %>
 	    	<br /><br />
-		    <%= link_to 'Show', portfolio_item %>
-				<%= link_to 'Edit', edit_portfolio_item_path(portfolio_item) %>
-				<%= link_to 'Destroy', portfolio_item, method: :delete, data: { confirm: 'Are you sure?' } %>
+		    <%= link_to "Show", portfolio_item %>
+				<%= link_to "Edit", edit_portfolio_item_path(portfolio_item) %>
+				<%= link_to "Destroy", portfolio_item, method: :delete, data: { confirm: "Are you sure?" } %>
 			<% end %>
 		</div>
 	</div>
@@ -29,5 +29,5 @@
 
 <br />
 <% if admin_signed_in? %>
-  <%= link_to 'New Portfolio Item', new_portfolio_item_path, class: "btn btn-primary" %>
+  <%= link_to "New Portfolio Item", new_portfolio_item_path, class: "btn btn-primary" %>
 <% end %>

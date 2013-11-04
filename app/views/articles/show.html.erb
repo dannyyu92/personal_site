@@ -4,13 +4,13 @@
 	<div class="alert alert-success"><%= notice %></div>
 <% end %>
 
-<hr class='featurette-divider'>
+<hr class="featurette-divider">
 
 
 <div class="row-fluid">
 	<div class="span8 offset2">
 				<%= render @article %>
-				<%= link_to 'Back', articles_path, class:"btn btn-primary" %>
+				<%= link_to "Back", articles_path, class:"btn btn-primary" %>
 				<%= render "comments/form" %>	
 				<%= render partial: "articles/comment", collection: @article.comments %>
 	</div>

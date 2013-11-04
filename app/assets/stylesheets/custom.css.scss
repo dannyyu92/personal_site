@@ -1,10 +1,48 @@
 @import "bootstrap";
-@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Oxygen:400,700);
+@font-face {
+    font-family: "proxima_novalight";
+    src: url(font-path("proximanova-light-webfont.eot"));
+    src: url(font-path("proximanova-light-webfont.eot?#iefix")) format("embedded-opentype"),
+         url(font-path("proximanova-light-webfont.woff")) format("woff"),
+         url(font-path("proximanova-light-webfont.ttf")) format("truetype"),
+         url(font-path("proximanova-light-webfont.svg#proxima_novalight")) format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "proxima_nova_rgregular";
+    src: url(font-path("proximanova-reg-webfont.eot"));
+    src: url(font-path("proximanova-reg-webfont.eot?#iefix")) format("embedded-opentype"),
+         url(font-path("proximanova-reg-webfont.woff")) format("woff"),
+         url(font-path("proximanova-reg-webfont.ttf")) format("truetype"),
+         url(font-path("proximanova-reg-webfont.svg#proxima_nova_rgregular")) format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "proxima_novasemibold";
+    src: url(font-path("proximanova-sbold-webfont.eot"));
+    src: url(font-path("proximanova-sbold-webfont.eot?#iefix")) format("embedded-opentype"),
+         url(font-path("proximanova-sbold-webfont.woff")) format("woff"),
+         url(font-path("proximanova-sbold-webfont.ttf")) format("truetype"),
+         url(font-path("proximanova-sbold-webfont.svg#proxima_novasemibold")) format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "neosansregular";
+    src: url(font-path("neosans-webfont.eot"));
+    src: url(font-path("neosans-webfont.eot?#iefix")) format("embedded-opentype"),
+         url(font-path("neosans-webfont.woff")) format("woff"),
+         url(font-path("neosans-webfont.ttf")) format("truetype"),
+         url(font-path("neosans-webfont.svg#neosansregular")) format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* Universal */
 * {
-	font-family: "Oxygen", sans-serif;
-	font-weight: 400;
+	font-family: "proxima_novalight";
 }
 
 html {
@@ -58,11 +96,10 @@ p {
 	  background-repeat: repeat-x;
 
 	  /* IE8-9 gradient filter */
-	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3f3f3f', endColorstr='#000000', GradientType=0);
+	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f3f3f", endColorstr="#000000", GradientType=0);
 
 	  #logo {
-	  	font-family: "Quicksand", sans-serif;
-			font-weight: 400;
+	  	font-family: "proxima_nova_rgregular";
 	  	float: left;
 			padding-left: 10px;
 			padding-top: 35px;
@@ -75,12 +112,11 @@ p {
 	  }
 	  ul {
 
-	  	padding-top:25px;
+	  	padding-top:23px;
 	  	li a {
-	  		font-family: "Quicksand", sans-serif;
-				font-weight: 400;
+	  		font-family: "proxima_novalight";
 	  		color: #fff;
-	  		font-size: 1.2em;
+	  		font-size: 1.25em;
 	  		&:hover {
 	  			color: #9a9a9a;
 	  		}
@@ -124,16 +160,14 @@ footer {
 	background-color: #fff;
 	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 	h1 {
+		font-family: "proxima_nova_rgregular";
 		font-size: 5.0em;
-		font-weight: 400;
 		text-align: center;
 		padding-right: 160px;
 		letter-spacing: 1px;
 	}
 	p {
-		font-family: "Quicksand";
-		font-weight: 300;
-		margin-top: 10px;
+		font-family: "proxima_novalight";
 		letter-spacing: 1px;
 		text-align: center;
 	}

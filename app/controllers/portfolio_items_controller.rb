@@ -25,7 +25,7 @@ class PortfolioItemsController < ApplicationController
     @portfolio_item = PortfolioItem.new(params[:portfolio_item])
 
     if @portfolio_item.save
-      redirect_to @portfolio_item, notice: 'Portfolio item was successfully created.'
+      redirect_to @portfolio_item, notice: "Portfolio item was successfully created."
     else
       render action: "new"
     end
@@ -36,7 +36,7 @@ class PortfolioItemsController < ApplicationController
     @portfolio_item = PortfolioItem.find(params[:id])
 
     if @portfolio_item.update_attributes(params[:portfolio_item])
-      redirect_to @portfolio_item, notice: 'Portfolio item was successfully updated.'
+      redirect_to @portfolio_item, notice: "Portfolio item was successfully updated"
     else
       render action: "edit"
     end

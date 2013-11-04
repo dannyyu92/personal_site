@@ -12,7 +12,7 @@ class CommentsController < ApplicationController
     @comment = Comment.find(params[:id])
     @comment.article_id = params[:article_id]
 		@comment.destroy
-		redirect_to article_path(@comment.article_id), :notice => 'Comment deleted'
+		redirect_to article_path(@comment.article_id), :notice => "Comment deleted"
 	end
 
 end
